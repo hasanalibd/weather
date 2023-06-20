@@ -10,12 +10,11 @@ const getWeatherData = (location) =>{
 
 const displayTemperature = data =>{
     // const temperature = document.getElementById('temperature');
-    console.log(data);
     // temperature.innerText = data.main.temp;
-    setInnerTextById('temperature', data.main.temp);
-    
-    setInnerTextById('condition', data.weather[0].main);
     // contidion.innerText = data.weather[0].main;
+
+    setInnerTextById('temperature', data.main.temp);
+    setInnerTextById('condition', data.weather[0].main);
 }
 
 const setInnerTextById =(id, text) => {
